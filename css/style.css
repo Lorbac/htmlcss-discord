@@ -50,15 +50,24 @@ a:hover {
     text-decoration: underline;
 }
 
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 /* fine common */
 
 /* header */
 
 header {
-    font-size: 17px;
+    position: fixed;
+    z-index: 999;
+    background-color: #3161E0;
+    width: 100%;
     height: 10vh;
     line-height: 10vh;
-    background-color: #3161E0;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -88,7 +97,7 @@ body > header > nav > ul > li:nth-child(7) {
 
 /* main */
 
-.first_banner {
+.jumbo {
     height: 70vh;
     background-image: url(../img/jumbo.png);
     background-size: cover;
@@ -132,6 +141,36 @@ body > header > nav > ul > li:nth-child(7) {
     right: 155px;
 }
 
+.banner {
+    padding-top: 20vh;
+    position: relative;
+    height: 80vh;
+}
 
+.content_banner {
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.immagine_banner, .text_banner {
+    float: left;
+}
+
+.text_banner {
+    width: 300px;
+    margin: 40px;
+}
+
+.text_banner h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.text_banner span {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+    line-height: 1.5;
+}
 
 /* fine main */
