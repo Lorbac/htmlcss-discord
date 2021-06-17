@@ -4,3 +4,134 @@ padding: 0;
 box-sizing: border-box; 
 }
 
+body {
+    font-family:Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* common */
+
+.white_button, .black_button {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+}
+
+.white_button {
+    background-color: rgb(255, 255, 255);
+}
+
+.black_button {
+    background-color: black;
+}
+
+.text_white_button, .text_black_button {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.text_white_button {
+    color: rgb(100, 94, 94);
+}
+
+.text_black_button {
+    color: white;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 0 20px;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* fine common */
+
+/* header */
+
+header {
+    font-size: 17px;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: #3161E0;
+    font-weight: bold;
+}
+
+nav ul {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav ul li a img {
+    vertical-align: middle;
+}
+
+body > header > nav > ul > li:nth-child(1) {
+    padding: 0 200px;
+}
+
+body > header > nav > ul > li:nth-child(7) {
+    padding: 0 200px;
+}
+
+/* fine header */
+
+/* main */
+
+.first_banner {
+    height: 70vh;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    position: relative;
+}
+
+.jumbo_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 300px;
+    text-align: center;
+}
+
+.jumbo_content h1 {
+    font-size: 60px;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.jumbo_content span {
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+.jumbo_content .white_button, .black_button {
+    position: absolute;
+    bottom: 0;
+    height: 55px;
+    line-height: 55px;
+}
+
+.jumbo_content .white_button {
+    left: 155px;
+}
+
+.jumbo_content .black_button {
+    right: 155px;
+}
+
+
+
+/* fine main */
