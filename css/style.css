@@ -56,7 +56,24 @@ a:hover {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+.wave {
+    background-image: url(../img/wave.svg);
+    height: 100px;
+    filter: opacity(0.05)
+}
+
+.whiteWave {
+    background-image: url(../img/wave.svg);
+    height: 100px;
+    filter: opacity(0.05);
+    transform: rotate(180deg)
+}
+
+.gray {
+    background-color: hsl(0, 0%, 95%);
+}
 
 /* fine common */
 
@@ -218,7 +235,7 @@ span {
 /* footer */
 
 footer {
-    height: 90vh;
+    padding-bottom: 30px;
     background-color: #23272A;
 }
 
